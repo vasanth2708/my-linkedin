@@ -9,7 +9,7 @@ const Header = () => {
       <nav className="bg-blue-700 py-4 px-6 flex items-center justify-between mb-5">
         <div className="flex items-center">
           <Link href="/" className="text-lg uppercase font-bold text-white">
-            Clerk App
+            My Linkedin App
           </Link>
         </div>
         <div className="text-white flex items-center">

@@ -2,28 +2,22 @@
 import React, { useState } from 'react';
 
 const DashboardPage = () => {
-  // State to hold the list of posts and the current form data
   const [posts, setPosts] = useState([]);
   const [newPost, setNewPost] = useState("");
   const [newImage, setNewImage] = useState(null);
 
-  // Function to handle form submission
   const handlePost = async () => {
-    // Example function that posts to LinkedIn
     const postToLinkedIn = async () => {
       console.log("Posting to LinkedIn:", newPost);
-      // Here you would normally use the LinkedIn API to post
     };
 
     await postToLinkedIn();
 
-    // Add the new post to the local state to display in the UI
     setPosts([...posts, { text: newPost, image: newImage }]);
-    setNewPost(""); // Reset the text input
-    setNewImage(null); // Reset the image
+    setNewPost("");
+    setNewImage(null);
   };
 
-  // Function to handle image file input
   const handleImageChange = (event) => {
     const file = event.target.files[0];
     const reader = new FileReader();

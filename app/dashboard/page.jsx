@@ -15,7 +15,7 @@ const DashboardPage = () => {
       return; 
     }
 
-    const accessToken = "AQXAZWNsi9a6_z3KZL2W60n9UgdaQs1flmjM6PtUvVZe9e4AT50gpFUhgMmtD-fqt5OrtcLf7MOBMZYYOBnsKoLnxJqLdQneXbqfNAH0ZGmIzymV6HqOMDumbUtusHzJCtXZq0JuYST782GOWEAqLDgRlmR_wm4RHm2yrtpYxQknqv0KDy2DSakTBZ9ODLy59kSbFDDvB3A3rzBVXLXFCUJmaZaiYJym1-XG6mlCVd0TIBVjxlP7vQsRhNX2cCje1b30tZPvh9yHgfM4TZ4McAPqSuM0-yzWOFDYOiriSlQPERHJlZp41_18ZIPZ3xflNXNVwWrHuU46Wf32eYxSUNznTjjIRQ";
+    const accessToken = "";
     const url = 'https://api.linkedin.com/v2/ugcPosts';
     const headers = {
       'Authorization': `Bearer ${accessToken}`,
